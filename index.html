@@ -1,0 +1,97 @@
+import React from 'react';
+
+// Main App component
+const App = () => {
+  return (
+    <div className="flex flex-col min-h-screen bg-gray-100 font-sans">
+      {/* Main Content Area */}
+      <div className="flex-grow">
+        {/* Profile Card Section */}
+        <div className="container mx-auto px-4 py-8 md:py-12">
+          <div className="bg-white shadow-lg rounded-xl p-6 md:p-8">
+            <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
+              {/* Profile Image */}
+              <div className="flex-shrink-0 w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-blue-500 shadow-md">
+                <img 
+                  src="https://placehold.co/256x256/ADD8E6/000000?text=Appasami+G" 
+                  alt="Profile Image" 
+                  className="w-full h-full object-cover" 
+                  onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/256x256/cccccc/000000?text=Image+Error"; }}
+                />
+              </div>
+              
+              {/* Details */}
+              <div className="flex-grow w-full">
+                <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center md:text-left">APPASAMI.G</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-6 text-gray-700">
+                  <div className="flex items-center">
+                    <strong className="w-28 text-gray-900">Designation:</strong>
+                    <span>Assistant Professor</span>
+                  </div>
+                  <div className="flex items-center">
+                    <strong className="w-28 text-gray-900">Mobile No:</strong>
+                    <span>+91 - 9786554175</span>
+                  </div>
+                  <div className="flex items-center">
+                    <strong className="w-28 text-gray-900">Email Id:</strong>
+                    <span>appa.govi@gmail.com</span>
+                  </div>
+                  <div className="flex items-center col-span-1 md:col-span-2">
+                    <strong className="w-28 text-gray-900">Specialization:</strong>
+                    <span>Computer Science and Engineering, Data Science, Machine Learning, Image Processing, Cybersecurity</span>
+                  </div>
+                  <div className="flex items-center col-span-1 md:col-span-2">
+                    <strong className="w-28 text-gray-900">Address:</strong>
+                    <span>2/556 Ezhai Mariyamman kovil street, Thiruchitrambalam, Vanur Tk., Villupuram 605111, Tamilnadu, India</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Objective section can be added here if desired, from the resume */}
+            <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+              <h2 className="text-xl font-semibold text-blue-800 mb-2">Objective</h2>
+              <p className="text-gray-700">Excel as a teaching professional in Computer Science and Engineering by advancing in emerging technologies, enhancing my expertise, and contributing to the professional growth of others through teaching challenging subjects and creating an engaging, dynamic learning environment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer Section */}
+      <footer className="bg-gray-800 text-white py-6 mt-8 rounded-t-lg shadow-inner">
+        <div className="container mx-auto px-4 text-center">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="text-sm md:text-base">
+              Contact me via : 
+              <a href="https://orcid.org/0000-0002-4186-3166" target="_blank" rel="noopener noreferrer" className="inline-block mx-2">
+                <img src="https://placehold.co/30x30/A6CE39/FFFFFF?text=ORCID" alt="ORCID" className="rounded-md" />
+              </a>
+              <a href="https://scholar.google.co.in/citations?user=6kAeD-8AAAAJ" target="_blank" rel="noopener noreferrer" className="inline-block mx-2">
+                <img src="https://placehold.co/30x30/4285F4/FFFFFF?text=GS" alt="Google Scholar" className="rounded-md" />
+              </a>
+              <a href="https://www.webofscience.com/wos/author/record/HZI-7514-2023" target="_blank" rel="noopener noreferrer" className="inline-block mx-2">
+                <img src="https://placehold.co/30x30/007bff/FFFFFF?text=WoS" alt="Web of Science" className="rounded-md" />
+              </a>
+              <a href="https://www.scopus.com/authid/detail.uri?authorId=37088262300" target="_blank" rel="noopener noreferrer" className="inline-block mx-2">
+                <img src="https://placehold.co/30x30/E36C09/FFFFFF?text=Scopus" alt="Scopus" className="rounded-md" />
+              </a>
+              <a href="https://www.researchgate.net/scientific-contributions/G-Appasami-2028878360" target="_blank" rel="noopener noreferrer" className="inline-block mx-2">
+                <img src="https://placehold.co/30x30/00CC00/FFFFFF?text=RG" alt="ResearchGate" className="rounded-md" />
+              </a>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Appasami+G&cauthor_id=35996535" target="_blank" rel="noopener noreferrer" className="inline-block mx-2">
+                <img src="https://placehold.co/30x30/205C90/FFFFFF?text=PM" alt="PubMed" className="rounded-md" />
+              </a>
+              <a href="https://vidwan.inflibnet.ac.in/profile/323917" target="_blank" rel="noopener noreferrer" className="inline-block mx-2">
+                <img src="https://placehold.co/30x30/800080/FFFFFF?text=Vidwan" alt="Vidwan" className="rounded-md" />
+              </a>
+            </div>
+            <div className="text-sm md:text-base">
+              Created &copy; 2025 by Appasami
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default App;
